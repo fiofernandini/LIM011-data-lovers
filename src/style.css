@@ -1,0 +1,11 @@
+body{
+    background-image: url("./imagenes/pokemonmon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-cabecera-pokemon{
+    width: 360px;
+    height: 160px;
+    margin-left: 460px;
+    margin-top: 50px;
+}
