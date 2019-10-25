@@ -91,7 +91,7 @@ y de equipo.
 ### HTML y CSS
 
 - [ ] Entender y reconocer por qué es importante el HTML semántico.
-- [ ] Identificar y entender tipos de selectores en CSS.
+- [X] Identificar y entender tipos de selectores en CSS.
 - [ ] Entender como funciona `flexbox` en CSS.
 - [x] Construir tu aplicación respetando el diseño planeado (maquetación).
 
@@ -105,7 +105,7 @@ y de equipo.
 
 - [ ] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
 - [ ] Manipular objects (key | value).
-- [x] Entender el uso de condicionales (`if-else` | `switch`).
+- [X] Entender el uso de condicionales (`if-else` | `switch`).
 - [ ] Entender el uso de bucles (`for` | `forEach`).
 - [ ] Entender la diferencia entre expression y statements.
 - [ ] Utilizar funciones (parámetros | argumentos | valor de retorno).
@@ -113,9 +113,11 @@ y de equipo.
 - [ ] Utilizar ES Modules (`import` | `export`).
 
 ### Pruebas Unitarias (_testing_)
+
 - [ ] Testear funciones (funciones puras).
 
 ### Git y GitHub
+
 - [x] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
 - [x] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
 - [ ] Colaborar en Github (pull requests).
