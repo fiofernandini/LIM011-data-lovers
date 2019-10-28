@@ -1,3 +1,4 @@
 import POKEMON from './data/pokemon/pokemon.js'
-import { example } from './data.js';
-console.log(POKEMON);
+import { mostrarPokemon } from './data.js';
+
+document.querySelector('#insertar-pokemones').innerHTML = mostrarPokemon(POKEMON);

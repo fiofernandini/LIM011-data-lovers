@@ -1,11 +1,38 @@
 body{
     background-image: url("./imagenes/pokemonmon.png");
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
+    background-color:aqua;
 }
 .logo-cabecera-pokemon{
+    display: flex;
     width: 360px;
     height: 160px;
-    margin-left: 460px;
-    margin-top: 50px;
+    margin: auto;
 }
+.insertar-pokemones{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tarjeta-pokemon{
+    background-color:rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.nombre-pokemon{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.numero-pokemon{
+    margin-left: 35px;
+}
+
+@media(max-width: 768px){
+    .logo-cabecera-pokemon{
+        width: 200px;
+        height: 100px;        
+    }
+}
+
