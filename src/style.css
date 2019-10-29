@@ -6,6 +6,11 @@ body{
     background-size: cover;
     background-color:aqua;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 .logo-cabecera-pokemon{
     display: flex;
     width: 360px;
@@ -19,14 +24,24 @@ body{
 .tarjeta-pokemon{
     background-color:rgba(0, 0, 0, 0.1);
     margin-top: 30px;
-    margin-left: 120px;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tarjeta-pokemon:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 300ms;
+}
+.imagen-pokemon{
+    margin-left: 40px;    
 }
 .nombre-pokemon{
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 60px;
+    font-size: 18px;
 }
 .numero-pokemon{
-    margin-left: 35px;
+    margin-left: 80px;
 }
 
 @media(max-width: 768px){
