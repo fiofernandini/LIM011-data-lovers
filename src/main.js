@@ -8,10 +8,10 @@ const flex = document.getElementById('flex');
 const close = document.getElementById('close');
 
 document.querySelector('#insertar-pokemones').addEventListener('click', (event) => {
-    modal.style.display = 'block';
-    const idPokemon = parseInt(event.target.parentElement.id, 10);
-    const indicePokemon = POKEMON.map((arr) => arr.id).indexOf(idPokemon);
-    document.querySelector('.body-modal').innerHTML = `<div id="${POKEMON[indicePokemon].id}">
+  modal.style.display = 'block';
+  const idPokemon = parseInt(event.target.parentElement.id, 10);
+  const indicePokemon = POKEMON.map((arr) => arr.id).indexOf(idPokemon);
+  document.querySelector('.body-modal').innerHTML = `<div id="${POKEMON[indicePokemon].id}">
 <img class="datos-alternativos-img" src="${POKEMON[indicePokemon].img}">
 <div class="datos-alternativos">ALtura:${POKEMON[indicePokemon].height}</div>
     <p class="datos-alternativos">Peso: ${POKEMON[indicePokemon].weight}</p>
@@ -22,12 +22,12 @@ document.querySelector('#insertar-pokemones').addEventListener('click', (event) 
 </div>`;
 });
 
-close.addEventListener('click', () =>{
-    modal.style.display = 'none';
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
 });
 
 window.addEventListener('click', (event) => {
-    if(event.target === flex){
-        modal.style.display = 'none';
-    }
+  if (event.target === flex) {
+    modal.style.display = 'none';
+  }
 });

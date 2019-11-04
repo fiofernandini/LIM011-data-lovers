@@ -9,4 +9,4 @@ export const mostrarPokemon = (datos) => {
     </div>`;
   });
   return contenedorPokemon;
-}
+};
