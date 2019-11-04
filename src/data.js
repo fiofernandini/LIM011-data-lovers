@@ -1,6 +1,6 @@
 export const mostrarPokemon = (datos) => {
   let contenedorPokemon = '';
-  datos.map((elementos)=>{
+  datos.forEach((elementos) => {
     contenedorPokemon += `
     <div class="tarjeta-pokemon">
       <img src="${elementos.img}" class="imagen-pokemon">
@@ -9,4 +9,4 @@ export const mostrarPokemon = (datos) => {
     </div>`;
   });
   return contenedorPokemon;
-}
+};
