@@ -25,10 +25,12 @@
                 <span class="menu">&#9776;</span>    
         </div>
         <!--search-->
-        <ul>    
+        <ul>
+                
             <form id="filtros">
                 <li> <p>Filtrar por:</p></li>
-                <li><button id="inicio">Mostrar todos</button></li>
+                <!-- <li><button id="inicio">Mostrar todos</button></li> -->                
+
                 <li>
                     <select id="filtro-distancia" class="filtro-distancia">
                         <option disabled selected>Huevo</option> 
@@ -39,11 +41,13 @@
                     </select>
                 </li>
                 <li>
-                    <select id="filtro-alfabetico">
-                        <option disabled selected>Orden Alfabetico</option> 
-                        <option value="A-Z">A-Z</option>
-                        <option value="Z-A">Z-A</option>
-                    </select>
+                        <select name="" id="ordenAlfNum">
+                                <option disabled selected>Orden Alfabetico</option>
+                                <option value="A-Z">A-Z</option>
+                                <option value="Z-A">Z-A</option>
+                                <option value="ASC">Ascendente</option>
+                                <option value="DESC">Descendente</option>
+                        </select>
                 </li>
                 <li>
                         <select id="filtro-debilidades">
@@ -69,6 +73,7 @@
                         </select>
                     </li>
             </form>
+            <li><button id="mayor-frecuencia" value="MAYORF"><img src="./imagenes/top10.jpg" alt="TOP 10" width="100px"></button></li>
                 <li> <p>Tipos</p></li>
                 <li>
                     <section id="guia-tipos" class="guia-tipos">

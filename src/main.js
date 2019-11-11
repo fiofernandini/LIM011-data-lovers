@@ -1,6 +1,6 @@
 import POKEMON from './data/pokemon/pokemon.js';
 import {
-  traerDataMap2, filtroHuevo, filtrodebilidad, filtroTipo, buscarPorNombre,
+  traerDataMap2, filtroHuevo, filtroDebilidadTipo, buscarPorNombre, ordenAlfNum, AsDes
 } from './data.js';
 
 
@@ -38,13 +38,22 @@ document.querySelector('#filtro-distancia').addEventListener('change', () => {
 document.querySelector('#filtro-debilidades').addEventListener('change', () => {
   const seleccionarDebilidad = document.querySelector('#filtro-debilidades').value;
   console.log(seleccionarDebilidad);
-  seccionCardsPokemones.innerHTML = templateCard(filtrodebilidad(dataPokemon, seleccionarDebilidad));
+  seccionCardsPokemones.innerHTML = templateCard(filtroDebilidadTipo(dataPokemon, 'debilidad' ,seleccionarDebilidad));
   console.log(templateCard(filtrodebilidad(dataPokemon, seleccionarDebilidad)));
 });
+
+// 003: FILTRO POR ORDEN ALFABETICO Y NUMERICO.
+document.querySelector('#ordenAlfNum').addEventListener('change', ()=>{
+  const seleccionOpcion = document.querySelector('#ordenAlfNum').value;
+  console.log(seleccionOpcion);
+  seccionCardsPokemones.innerHTML = templateCard(AsDes(dataPokemon, seleccionOpcion));
+  console.log(ordenAlfNum(dataPokemon, seleccionOpcion));
+});
+
 // Tipo
 document.querySelector('#guia-tipos').addEventListener('click', (event) => {
   const seleccionarTipo = event.target.alt;
-  seccionCardsPokemones.innerHTML = templateCard(filtroTipo(dataPokemon, seleccionarTipo));
+  seccionCardsPokemones.innerHTML = templateCard(filtroDebilidadTipo(dataPokemon, 'tipo' , seleccionarTipo));
 });
 
 // nombre
@@ -53,22 +62,10 @@ document.querySelector('#nombre-pokemon').addEventListener('input', (event) => {
   seccionCardsPokemones.innerHTML = templateCard(buscarPorNombre(dataPokemon, pokemonBuscado));
 });
 
-/* // filtro alfabetico falta separarlo
-document.querySelector('#filtro-alfabetico').addEventListener('change', (event) => {
-  if (event.target.value === 'A-Z') {
-    dataPokemon.sort((em, em2) => (em.nombre < em2.nombre) ? - 1 :1);
-    seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
-  } if (event.target.value === 'Z-A') {
-    dataPokemon.sort((em, em2) => (em.nombre > em2.nombre) ? - 1 :1);
-    seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
-  }
-}); */
-
-// para retornar a la pantalla de inico con todos los pokemones
-document.querySelector('#inicio').addEventListener('click', () => {
-  const allPokemons = '';
-  seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
-  return allPokemons;
+// 005: TOP 10 DE FRECUENCIA DE APARICIÓN.
+const btnTop10 = document.querySelector('#mayor-frecuencia');
+btnTop10.addEventListener('click',() => {
+    seccionCardsPokemones.innerHTML = templateCard(AsDes(dataPokemon, btnTop10.value));
 });
 
 // menu
@@ -77,3 +74,5 @@ toglee.addEventListener('click', () => {
   document.getElementById('siderbar').classList.toggle('active');
   document.querySelector('#filtros').reset();
 });
+
+
