@@ -1,33 +1,79 @@
 import POKEMON from './data/pokemon/pokemon.js';
-import { mostrarPokemon } from './data.js';
+import {
+  traerDataMap2, filtroHuevo, filtrodebilidad, filtroTipo, buscarPorNombre,
+} from './data.js';
 
-document.querySelector('#insertar-pokemones').innerHTML = mostrarPokemon(POKEMON);
 
-const modal = document.getElementById('modal');
-const flex = document.getElementById('flex');
-const close = document.getElementById('close');
+const dataPokemon = traerDataMap2(POKEMON);
+const templateCard = (arr) => {
+  let stringTemplate = '';
+  arr.forEach((obj) => {
+    stringTemplate += `<div class="tarjeta-pokemon" id=${obj.identificador}>
+    <img src="${obj.imagen}" class="imagen-pokemon">
+    <p class="nombre-pokemon"  >${obj.nombre}  </p>
+    <p class="numero-pokemon" >${obj.numero} </p>
+    <div class="informacion-alternativa">
+    <div class="datos-alternativos">Altura: ${obj.altura}</div>
+    <div class="datos-alternativos">Peso: ${obj.peso}</div>
+    <div class="datos-alternativos">Caramelos: ${obj.caramelos}</div>
+    <div class="datos-alternativos">Hora de aparación: ${obj.horaAparicion}</div>
+    <div class="datos-alternativos"}>Debilidades:</div>
+    <div class="datos-alternativosD">${obj.debilidades}</div>
+    <div class="huevo-pokemon"><img src="./imagenes/huevo.png" width="15" height"15">${obj.huevo}</div>
+    </div>
+    </div>`;
+  });
+  return stringTemplate;
+};
 
-document.querySelector('#insertar-pokemones').addEventListener('click', (event) => {
-  modal.style.display = 'block';
-  const idPokemon = parseInt(event.target.parentElement.id, 10);
-  const indicePokemon = POKEMON.map((arr) => arr.id).indexOf(idPokemon);
-  document.querySelector('.body-modal').innerHTML = `<div id="${POKEMON[indicePokemon].id}">
-<img class="datos-alternativos-img" src="${POKEMON[indicePokemon].img}">
-<div class="datos-alternativos">ALtura:${POKEMON[indicePokemon].height}</div>
-    <p class="datos-alternativos">Peso: ${POKEMON[indicePokemon].weight}</p>
-    <p class="datos-alternativos">Caramelos: ${POKEMON[indicePokemon].candy_count}</p>
-    <p class="datos-alternativos">Hora de Aparición: ${POKEMON[indicePokemon].spawn_time}</p>
-    <p class="datos-alternativos">Debilidades:</p>
-    <p class="datos-alternativos">${POKEMON[indicePokemon].weaknesses}</p>  
-</div>`;
+const seccionCardsPokemones = document.querySelector('#insertar-pokemones');
+seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
+
+// huevos
+document.querySelector('#filtro-distancia').addEventListener('change', () => {
+  const seleccionarhuevo = document.querySelector('#filtro-distancia').value;
+  seccionCardsPokemones.innerHTML = templateCard(filtroHuevo(dataPokemon, seleccionarhuevo));
+});
+// debilidades
+document.querySelector('#filtro-debilidades').addEventListener('change', () => {
+  const seleccionarDebilidad = document.querySelector('#filtro-debilidades').value;
+  console.log(seleccionarDebilidad);
+  seccionCardsPokemones.innerHTML = templateCard(filtrodebilidad(dataPokemon, seleccionarDebilidad));
+  console.log(templateCard(filtrodebilidad(dataPokemon, seleccionarDebilidad)));
+});
+// Tipo
+document.querySelector('#guia-tipos').addEventListener('click', (event) => {
+  const seleccionarTipo = event.target.alt;
+  seccionCardsPokemones.innerHTML = templateCard(filtroTipo(dataPokemon, seleccionarTipo));
 });
 
-close.addEventListener('click', () => {
-  modal.style.display = 'none';
+// nombre
+document.querySelector('#nombre-pokemon').addEventListener('input', (event) => {
+  const pokemonBuscado = event.target.value.toLowerCase();
+  seccionCardsPokemones.innerHTML = templateCard(buscarPorNombre(dataPokemon, pokemonBuscado));
 });
 
-window.addEventListener('click', (event) => {
-  if (event.target === flex) {
-    modal.style.display = 'none';
+/* // filtro alfabetico falta separarlo
+document.querySelector('#filtro-alfabetico').addEventListener('change', (event) => {
+  if (event.target.value === 'A-Z') {
+    dataPokemon.sort((em, em2) => (em.nombre < em2.nombre) ? - 1 :1);
+    seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
+  } if (event.target.value === 'Z-A') {
+    dataPokemon.sort((em, em2) => (em.nombre > em2.nombre) ? - 1 :1);
+    seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
   }
+}); */
+
+// para retornar a la pantalla de inico con todos los pokemones
+document.querySelector('#inicio').addEventListener('click', () => {
+  const allPokemons = '';
+  seccionCardsPokemones.innerHTML = templateCard(dataPokemon);
+  return allPokemons;
+});
+
+// menu
+const toglee = document.querySelector('.toglee');
+toglee.addEventListener('click', () => {
+  document.getElementById('siderbar').classList.toggle('active');
+  document.querySelector('#filtros').reset();
 });
