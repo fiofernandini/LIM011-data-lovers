@@ -16,29 +16,29 @@ const card = (obj) => {
     const divElementModal = document.createElement('div');
     divElementModal.classList.add('modal');
     divElementModal.innerHTML = `
-     <div class="flex">
-      <div class="contenido-modal">
-      <span class="cerrar" id="cerrar">&times;</span>
-       <div class"modal-body">
-        <img src="${obj.imagen}" class="datos-alternativos-img">
-        <p class="datos-alternativos">Tipo: ${obj.tipo}</p>
-        <p class="datos-alternativos">Altura: ${obj.altura}</p>
-        <p class="datos-alternativos">Peso: ${obj.peso}</p>
-        <p class="datos-alternativos">Caramelos: ${obj.caramelos}</p>
-        <p class="datos-alternativos">Hora de aparación: ${obj.horaAparicion}</p>
-        <p class="datos-alternativos">Debilidades:</div>
-        <p class="datos-alternativos">${obj.debilidades}</p>
-        <figure class="datos-alternativos">
-         <img src="./imagenes/huevo.png" width="15" height"15">${obj.huevo}
-        </figure>
-       </div>
+      <div class="flex">
+        <div class="contenido-modal">
+          <span class="cerrar" id="cerrar">&times;</span>
+          <div class"modal-body">
+            <img src="${obj.imagen}" class="datos-alternativos-img">
+            <div class="datos-alternativos">Tipo: ${obj.tipo}</div>
+            <div class="datos-alternativos">Altura: ${obj.altura}</div>
+            <div class="datos-alternativos">Peso: ${obj.peso}</div>
+            <div class="datos-alternativos">Caramelos: ${obj.caramelos}</div>
+            <div class="datos-alternativos">Hora de aparación: ${obj.horaAparicion}</div>
+            <div class="datos-alternativos">Debilidades:</div>
+            <div class="datos-alternativos">${obj.debilidades}</div>
+            <figure class="datos-alternativos">
+              <img src="./imagenes/huevo.png" width="15" height"15">${obj.huevo}
+            </figure>
+          </div>
+        </div>
       </div>
-     </div>
-     `;
+    `;
     document.body.appendChild(divElementModal);
     divElementModal.classList.add('modal-open');
     const cerrar = document.getElementById('cerrar');
-    // Cerrar modal.
+    // CERRAR MODAL
     cerrar.addEventListener('click', () => {
       document.body.removeChild(divElementModal);
     });

@@ -1,7 +1,18 @@
 // importamos la función `example`
 import {
-  filtroHuevo, filtroDebilidadTipo, buscarPorNombre, AsDes,
+  filtroHuevo, filtroDebilidadTipo, buscarPorNombre, AsDes, traerDataMap2,
 } from '../src/data';
+
+describe('traerDataMap2', () => {
+  it('deberia ser una funcion', () => {
+    expect(typeof traerDataMap2).toBe('function');
+  });
+  it('Deberia crear una copia del array', () => {
+    const dataPrincipal = [{ name: 'Bulbasaur' }, { name: 'Ivysaur' }];
+    const dataNueva = [{ nombre: 'Bulbasaur' }, { nombre: 'Ivysaur' }];
+    expect(traerDataMap2(dataPrincipal)).toEqual(dataNueva);
+  });
+});
 
 describe('filtroHuevo', () => {
   it('debería ser una función', () => {

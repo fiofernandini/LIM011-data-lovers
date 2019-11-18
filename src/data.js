@@ -60,7 +60,6 @@ export const AsDes = (data, string) => {
       return ordenAlfNum(data, 'numero').reverse();
     case 'MAYORF':
       return ordenAlfNum(data, 'frecuencia').slice(0, 10);
-    default:
-      break;
+      // no default
   }
 };
