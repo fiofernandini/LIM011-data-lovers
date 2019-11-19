@@ -62,7 +62,7 @@ Dentro de la investigación encontramos lo siguiente:
 
 ### 4.1. Desktop
 
-![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/escritorio1.jpeg | width=100)
+![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/escritorio1.jpeg)
 
 ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/escritorio2.jpeg)
 
