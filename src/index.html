@@ -2,24 +2,137 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Data Lovers</title>
+    <title>PokeData</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="./imagenes/icono.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header>
       <figure>
-          <img class="logo-cabecera-pokemon" src="./imagenes/pokelogo.png">
+                <img class="logo-cabecera-pokemon" src="./imagenes/pokelogo.png">
       </figure>      
     </header>
-    <main>
-        <div class="insertar-pokemones" id="insertar-pokemones"></div>
-    </main>
+        <form class="fomulario-nombre">
+                <input type="text" id="nombre-pokemon" value="" placeholder="Escribe el nombre de tu pokémon"/>
+        </form>
+    <div id="siderbar">
+        <div class="toglee">
+                <span class="menu">&#9776;</span>    
+        </div>
+        <ul>
+                
+            <form id="filtros">
+                <li> <p>Filtrar por:</p></li>            
+                <li>
+                        <select id="filtro-distancia" class="filtro-distancia">
+                                <option disabled selected>Huevo</option> 
+                                <option value="Not in Eggs">Not in Eggs</option>
+                                <option value="2 km">2 km</option>
+                                <option value="5 km">5 km</option>
+                                <option value="10 km">10 km</option>
+                        </select>
+                </li>
+                <li>
+                        <select name="" id="ordenAlfNum">
+                                <option disabled selected>Orden</option>
+                                <option value="A-Z">A-Z</option>
+                                <option value="Z-A">Z-A</option>
+                                <option value="ASC">Ascendente</option>
+                                <option value="DESC">Descendente</option>
+                        </select>
+                </li>
+                <li>
+                        <select id="filtro-debilidades">
+                                <option disabled selected>Debilidades</option> 
+                                <option value="Water">Agua</option>
+                                <option value="Flying">Aire</option>
+                                <option value="Dragon">Dragon</option>
+                                <option value="Electric">Electricidad</option>
+                                <option value="Ghost">Fantasma</option>
+                                <option value="Fire">Fuego</option>
+                                <option value="Ice">Hielo</option>
+                                <option value="Bug">Insecto</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Fighting">Lucha</option> 
+                                <option value="Grass">Planta</option>
+                                <option value="Psychic">Psíquico</option>
+                                <option value="Rock">Roca</option>                          
+                                <option value="Ground">Tierra</option> 
+                                <option value="Poison">Veneno</option>
+                                <option value="Fairy">Magico</option>                          
+                                <option value="Dark">Oscuro</option> 
+                                <option value="Steel">Acero</option>
+                        </select>
+                    </li>
+            </form>
+                 <li>
+                        <button id="mayor-frecuencia" value="MAYORF"><img src="./imagenes/top10.jpg" alt="TOP 10" width="100px"></button>
+                </li>
+                <li><p>Tipos:</p></li>
+                <li>
+                    <section id="guia-tipos" class="guia-tipos">
+                        <button id="aire" class="btn-tipo"> 
+                               <img class="btn" src="./imagenes/aire.png" alt="Flying"><br> Aire
+                        </button>
+                        <button id="electrico" class="btn-tipo"> 
+                               <img class="btn" src="./imagenes/electrico.png" alt="Electric"><br> Eléctrico
+                        </button>
+                        <button id="agua" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/agua.png" alt="Water"><br> Agua
+                        </button>
+                        <button id="dragon" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/dragon.png" alt="Dragon"><br> Dragón
+                        </button>
+                        <button id="fantasma" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/fantasma.png" alt="Ghost"><br> Ghost
+                        </button>
+                        <button id="tierra" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/tierra.png" alt="Ground"><br> Tierra
+                        </button>
+                        <button id="fuego" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/fuego.png" alt="Fire"><br> Fuego
+                        </button>
+                        <button id="insecto" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/insecto.png" alt="Bug"><br> Insecto
+                        </button>
+                        <button id="lucha" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/lucha.png" alt="Fighting"><br> Lucha
+                        </button>
+                        <button id="normal" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/normal.png" alt="Normal"><br> Normal
+                        </button>
+                        <button id="planta" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/planta.png" alt="Grass"><br> Planta
+                        </button>
+                        <button id="hielo" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/hielo.png" alt="Ice"><br> Hielo
+                        </button>
+                        <button id="psiquico" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/psiquico.png" alt="Psychic"><br> Psíquico
+                        </button>
+                        <button id="roca" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/roca.png" alt="Rock"><br> Roca
+                        </button>
+                        <button id="veneno" class="btn-tipo"> 
+                                <img class="btn" src="./imagenes/veneno.png" alt="Poison"><br> Veneno
+                        </button>
+                    </section>
+                </li>
+        </ul>
+    </div>
+    
+   <main>
+        <div class="insertar-pokemones" id="insertar-pokemones"></div>   
+   </main> 
+   
     <footer>
-        <a href="https://www.facebook.com/PokemonGO/" title="Facebook PokemonGo" target="_blank"> <img src="./imagenes/facebook.png" alt="Facebook"> </a>
-        <a href="https://www.instagram.com/pokemongoapp/" title="Instagram PokemonGo" target="_blank"> <img src="./imagenes/instagram.png" alt="Instagram"> </a>
-        <a href="https://twitter.com/pokemongoapp?lang=es" title="Twitter PokemonGo" target="_blank"> <img src="./imagenes/twitter.png" alt="Twitter"> </a>
+      <a class="redes-sociales" href="https://www.facebook.com/PokemonGO/" title="Facebook PokemonGo" target="_blank"> <img src="./imagenes/facebook.png" alt="Facebook"> </a>
+      <a class="redes-sociales" href="https://www.instagram.com/pokemongoapp/" title="Instagram PokemonGo" target="_blank"> <img src="./imagenes/instagram.png" alt="Instagram"> </a>
+      <a class="redes-sociales" href="https://twitter.com/pokemongoapp?lang=es" title="Twitter PokemonGo" target="_blank"> <img src="./imagenes/twitter.png" alt="Twitter"> </a> 
     </footer>    
     <script type="module" src="main.js"></script>
   </body>
