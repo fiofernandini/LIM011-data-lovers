@@ -11,13 +11,13 @@ const stringEvolution = (arr) => {
   let newString = '';
   arr.forEach((obj) => {
     newString += `
-<div class = "columna-evo">
-    <p>${obj.label}</p>
-    <figure>
-      <img class="imagen-evolucion" src="http://www.serebii.net/pokemongo/pokemon/${obj.num}.png">
-    </figure>
-    <h4>${obj.name}</h4>
-</div>
+    <div class = "columna-evo">
+      <h5>${obj.label}</h5>
+      <figure>
+       <img class="imagen-evolucion" src="http://www.serebii.net/pokemongo/pokemon/${obj.num}.png">
+      </figure>
+      <h5>${obj.name}</h5>
+    </div>
   `;
   });
   return newString;
@@ -39,48 +39,46 @@ const card = (obj) => {
       <div class="contenido-modal">
         <span class="cerrar" id="cerrar">&times;</span>
         <div class="modal-body">
-          <div class="modal-header">
-            <div>
+          <section class="modal-header">
               <figure>
                 <img src="${obj.imagen}">
               </figure>
-                <h4>${obj.nombre}</h4>
-                <h5>${obj.numero}</h5>
-            </div>
-          </div>
-          <div class="modal-main">
-            <div class = "columna">
-                <h5 class="atributo-titulo">Tipo</h5>
-                <p><span class="atributo-valor">${obj.tipo}</span></p>
-                <p class ="atributo-titulo">Altura</p>
-                <p><span class="atributo-valor">${obj.altura}</span></p>
-                <p class = "atributo-titulo">Peso</p>
-                <p><span class = "atributo-valor">${obj.peso}</span></p>
-                <p class = "atributo-titulo">Caramelos</p>
-                <p><span class = "atributo-valor">${obj.caramelos}</span></p>          
-            </div>
-            <div class = "columna">
-                <p class = "atributo-titulo">H.Aparación</p>
-                <p><span class = "atributo-valor">${obj.horaAparicion}</span></p>
-                <p class = "atributo-titulo">Debilidades</p>
-                <p><span class = "atributo-valor">${obj.debilidades}</span></p>
-                <p class = "atributo-titulo">Encubadora</p>
-                <p><span class = "atributo-valor">${obj.huevo}</span><p/>
-            </div>
-          </div>
-          <div class="modal-footer">
+                <p>${obj.nombre}</p>
+                <p>${obj.numero}</p>
+          </section>
+          <section class="modal-main">
+            <section class = "columna">
+                <p class="datos-alternativos">Tipo</p>
+                <p><span class="datos-alternativos1">${obj.tipo}</span></p>
+                <p class ="datos-alternativos">Altura</p>
+                <p><span class="datos-alternativos1">${obj.altura}</span></p>
+                <p class = "datos-alternativos">Peso</p>
+                <p><span class = "datos-alternativos1">${obj.peso}</span></p>
+                <p class = "datos-alternativos">Debilidades</p>
+                <p><span class = "datos-alternativos1">${obj.debilidades}</span></p>           
+            </section>
+            <section class = "columna">
+                <p class = "datos-alternativos">H.Aparación</p>
+                <p><span class = "datos-alternativos1">${obj.horaAparicion}</span></p>
+                <p class = "datos-alternativos">Caramelos</p>
+                <p><span class = "datos-alternativos1">${obj.caramelos}</span></p> 
+                <p class = "datos-alternativos">Encubadora</p>
+                <p><span class = "datos-alternativos1">${obj.huevo}</span><p/> 
+            </section>
+          </section>
+          <section class="modal-footer"> 
             <div class="evolucion">${stringEvolution(evolutions(dataPokemon, 'Previo', obj.identificador))}</div>
             <div class="evolucion">${stringEvolution(evolutions(dataPokemon, 'Siguiente', obj.identificador))}</div>
-          </div>
+          </section>
         </div>
       </div>
     </div>`;
-    document.body.appendChild(divElementModal);
+    document.querySelector('#insertar-pokemones').appendChild(divElementModal);
     divElementModal.classList.add('modal-open');
-    const cerrar = document.getElementById('cerrar');
     // CERRAR MODAL
+    const cerrar = document.getElementById('cerrar');
     cerrar.addEventListener('click', () => {
-      document.body.removeChild(divElementModal);
+      document.querySelector('#insertar-pokemones').removeChild(divElementModal);
     });
   });
   return divElement;
