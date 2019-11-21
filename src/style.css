@@ -201,10 +201,10 @@ ul{
    
 }
 .columna{
-    padding: 5px;
+    padding: 3px;
     text-align: center; 
 }
-.atributo-titulo{
+.datos-alternativos{
     width: 120px;
     height: 25px;
     background-color:rgb(27, 112, 56);
@@ -214,8 +214,8 @@ ul{
     line-height: 27px;
     margin: auto;
 }
-.atributo-valor{
-    font-weight: bold;
+.datos-alternativos1{
+    font-weight: bold;   
     line-height: 30px;
 }
 .modal-footer{
