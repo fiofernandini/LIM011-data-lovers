@@ -62,7 +62,7 @@ const card = (obj) => {
                 <p><span class = "datos-alternativos1">${obj.horaAparicion}</span></p>
                 <p class = "datos-alternativos">Caramelos</p>
                 <p><span class = "datos-alternativos1">${obj.caramelos}</span></p> 
-                <p class = "datos-alternativos">Encubadora</p>
+                <p class = "datos-alternativos">Incubadora</p>
                 <p><span class = "datos-alternativos1">${obj.huevo}</span><p/> 
             </section>
           </section>
