@@ -27,7 +27,6 @@ ul{
 }
 .logo-cabecera-pokemon{
     display: flex; 
-    display: block;
     width: 360px;
     height: 160px;
     margin: auto; 

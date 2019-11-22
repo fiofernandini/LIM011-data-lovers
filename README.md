@@ -8,6 +8,7 @@
 * [4. Prototipo en papel](#4-prototipo-en-papel)
 * [5. Feedback](#5-feedback)
 * [6. Prototipo en Figma](#6-prototipo-en-figma)
+* [7. Objetivos de aprendizaje](#7-obejtivos-de-aprendizaje)
 
 
 ***
@@ -100,5 +101,42 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/figmacelular.png)
 
 \* Puedes ver el prototipo mobile completo en este [link](https://www.figma.com/proto/8QId6tCu6gQDM7UdPdSz0E/POKE-CELULAR?node-id=1%3A2&scaling=min-zoom)
+
+***
+### 7. Objetivos de aprendizaje
+
+## UX
+- [X] Diseñar la aplicación pensando y entendiendo al usuario.
+- [X] Crear prototipos para obtener _feedback_ e iterar.
+- [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- [X] Planear y ejecutar _tests_ de usabilidad.
+## HTML y CSS
+- [X] Entender y reconocer por qué es importante el HTML semántico.
+- [X] Identificar y entender tipos de selectores en CSS.
+- [X] Entender como funciona `flexbox` en CSS.
+- [X] Construir tu aplicación respetando el diseño planeado (maquetación).
+## DOM
+- [X] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
+- [X] Manejar eventos del DOM. (addEventListener)
+- [ ] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+## Javascript
+- [X] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
+- [ ] Manipular objects (key | value).
+- [X] Entender el uso de condicionales (`if-else` | `switch`).
+- [X] Entender el uso de bucles (`for` | `forEach`).
+- [ ] Entender la diferencia entre expression y statements.
+- [ ] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
+- [X] Utilizar ES Modules (`import` | `export`).
+## Pruebas Unitarias (_testing_)
+- [X] Testear funciones (funciones puras).
+## Git y GitHub
+- [X] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
+- [X] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
+- [X] Colaborar en Github (pull requests).
+## Buenas prácticas de desarrollo
+- [ ] Organizar y dividir el código en módulos (Modularización).
+- [X] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
+- [X] Utilizar linter para seguir buenas prácticas (ESLINT).
 
 ***
