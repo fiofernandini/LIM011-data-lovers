@@ -142,3 +142,37 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 
 ***
 ## 8. Reflexión
+
+### 1. Sé lo que es, para qué sirve, su contexto y cómo se espera que funcione.
+
+Tengo claro algunos de los objetivos de aprendizaje, pero siento que me falta complementar otros, 
+de alguna forma sé para que sirven y que hacen, pero todavía me enredo en como exactamente estan funcionando.
+
+### 2. Lo hice en este proyecto y lo puedo explicar.
+### En la parte UX:
+* Prototipado baja fidelidad.
+* Prototipado de alta fidelidad.
+* Test de usabilidad.
+* Historias de usuario.
+* Iteraciones.
+
+### En la parte de codigo:
+* Maquetación con el html.
+* Css.
+* Función de filtrado por huevitos.
+* Función de filtrado por tipos.
+* Función de filtrado por debilidades.
+* Función de busqueda por nombre.
+(la función de tipo y debilidades fue fusionada con ayuda de una Coach para funcionarla a solo una función,
+ yo logro entenderlas por separado)
+
+### 3. Lo puedo volver a hacer en otro contexto/proyecto diferente. Qué propones para trabajar la siguiente semana.
+
+* Realizar mi proyecto pensando en mis usuarios.
+* Realizar mis prototipos de alta fidelidad con todas las historias de usuario.
+* Maquetar con html acorde a mi Figma.
+* Dar diseño con css.
+* Trabajar con import y export.
+* Realizar algunas funciones de filtrado.
+
+Hay ciertas iteraciones que todavía quiero realizar para hacer mi pagina todavía mas amigable para los usuarios, tanto en interacción como lo visual. Mi propuesta es trabajar de forma independiente, para poder concretar estas iteraciones, a parte de eso, todavía me falta concretar objetivos de aprendizaje, que deseo manejar a mi propio ritmo.
