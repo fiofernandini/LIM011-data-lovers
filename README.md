@@ -8,13 +8,14 @@
 * [4. Prototipo en papel](#4-prototipo-en-papel)
 * [5. Feedback](#5-feedback)
 * [6. Prototipo en Figma](#6-prototipo-en-figma)
+* [7. Obejtivos de aprendizaje](#7-objetivos-de-aprendizaje)
 
 
 ***
 
 ## 1. Resumen
 
-Este proyecto permite al usuario visualizar a los 151 Pokemones de la región Kanto, organizados en orden numérico. Además, también podrá usar filtros avanzados de búsqueda como de manera ascendente o descendente, por huevos (para conocer los kilometros) y por debilidades. 
+Este proyecto permite al usuario visualizar a los 151 Pokemones de la región Kanto, organizados en orden numérico. Además, también podrá usar filtros avanzados de búsqueda por orden (ascendente, descendente, alfabetico), por huevos (para conocer los kilometros) por tipos y debilidades. 
 Buscamos que con esta información el usuario pueda mejorar su estrategia de juego en Pokémon Go.
 
 ## 2. Imagen final del proyecto
@@ -57,7 +58,15 @@ Dentro de la investigación encontramos lo siguiente:
   - Como usuario necesito filtrar por orden alfabetico a fin de realizar una búsqueda ordenada.
   - Como usuario necesito ver la página en distintos dispositivos para mayor comodidad.
   - Como usuario necesito filtrar por evolución para saber la siguiente evolcuión de un pokémon.
+
+  ### 3.2. User persona
+
+  Teniendo en cuenta las historias de usuario, creamos el siguiente User Persona:
+
+  ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/master/src/imagenes/userpokemon.png)
+
   ***
+  
 ## 4. Prototipo en papel
 
 ### 4.1. Desktop
@@ -85,6 +94,7 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 
 * Eliminar los botones de tipo de Pokemon que estaban en la parte superior de la pantalla ya que los usuarios encontraron la primera pantalla muy recargada de información.
 * Crear un menú desplegable en donde se ubicaban las opciones de filtrado y tipo de Pokemon, ya que los usuarios estaban acostumbrados a este tipo de menú y hacía que la primera página de la web se vea más ordenada.
+* El nombre de los Pokémons estaba en color rojo, lo cual para el usuario significaba un signo de alerta o advertencia, tomando en cuenta esta sensación se optó por cambiar de color.
 *  El usuario identificó el listado de Pokemones y su información detallada, tuvo alguna dificultad con el buscador y el idioma ya que en su mayoría el contenido estaba en ingles y las opciones de filtrado en español, sin embargo, al descubrir el bloque de opciones de filtrado y ordenado de cada Pokémon pudo identificar y clasificar a cada Pokemon.
 ***
 ## 6. Prototipo en Figma
@@ -100,5 +110,42 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/figmacelular.png)
 
 \* Puedes ver el prototipo mobile completo en este [link](https://www.figma.com/proto/8QId6tCu6gQDM7UdPdSz0E/POKE-CELULAR?node-id=1%3A2&scaling=min-zoom)
+
+***
+## 7. Objetivos de aprendizaje
+
+### UX
+- [X] Diseñar la aplicación pensando y entendiendo al usuario.
+- [X] Crear prototipos para obtener _feedback_ e iterar.
+- [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- [X] Planear y ejecutar _tests_ de usabilidad.
+### HTML y CSS
+- [X] Entender y reconocer por qué es importante el HTML semántico.
+- [X] Identificar y entender tipos de selectores en CSS.
+- [X] Entender como funciona `flexbox` en CSS.
+- [X] Construir tu aplicación respetando el diseño planeado (maquetación).
+### DOM
+- [X] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
+- [X] Manejar eventos del DOM. (addEventListener)
+- [ ] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+### Javascript
+- [X] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
+- [X] Manipular objects (key | value).
+- [X] Entender el uso de condicionales (`if-else` | `switch`).
+- [X] Entender el uso de bucles (`for` | `forEach`).
+- [ ] Entender la diferencia entre expression y statements.
+- [X] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
+- [X] Utilizar ES Modules (`import` | `export`).
+### Pruebas Unitarias (_testing_)
+- [X] Testear funciones (funciones puras).
+### Git y GitHub
+- [X] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
+- [X] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
+- [X] Colaborar en Github (pull requests).
+### Buenas prácticas de desarrollo
+- [X] Organizar y dividir el código en módulos (Modularización).
+- [X] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
+- [X] Utilizar linter para seguir buenas prácticas (ESLINT).
 
 ***

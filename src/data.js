@@ -1,5 +1,7 @@
+/* eslint-disable arrow-body-style */
+/* eslint-disable consistent-return */
 /* eslint-disable no-param-reassign */
-// Minidata
+// FUNCION MINIDATA.
 export const traerDataMap2 = (arr) => arr.map((ele) => {
   const obj = {
     identificador: ele.id,
@@ -19,38 +21,36 @@ export const traerDataMap2 = (arr) => arr.map((ele) => {
   };
   return obj;
 });
-// Filtro Huevos
+// FUNCION HUEVITOS.
 export const filtroHuevo = (array, distancia) => {
   const nuevoArray = array.filter((objeto) => objeto.huevo === distancia);
   return nuevoArray;
 };
-// Filtro debilidades y tipo
-export const filtroDebilidadTipo = (array, propiedad, valor) => {
-  const newArray = [];
-  array.forEach((objeto) => {
-    objeto[propiedad].forEach((string) => {
-      if (string === valor) {
-        newArray.push(objeto);
-      }
-    });
-  });
-  return newArray;
+// FUNCION DEBILIDADES.
+export const filtroDebilidad = (array, debilidad) => {
+  const nuevoArray = array.filter((objeto) => objeto.debilidades[0] === debilidad
+  || objeto.debilidades[1] === debilidad || objeto.debilidades[2] === debilidad
+  || objeto.debilidades[3] === debilidad || objeto.debilidades[4] === debilidad
+  || objeto.debilidades[5] === debilidad || objeto.debilidades[6] === debilidad);
+  return nuevoArray;
 };
-
-// filtro buscador por nombre
-export const buscarPorNombre = (array, nombres) => {
-  const nuevoArraysss = array.filter((objeto) => (objeto.nombre).toLowerCase().startsWith(nombres));
+// FUNCION TIPO.
+export const filtroTipo = (array, tipos) => {
+  const nuevoArray = array.filter((objeto) => objeto.tipo[0] === tipos
+  || objeto.tipo[1] === tipos);
+  return nuevoArray;
+};
+// FUNCION PARA BUSCAR NOMBRES.
+export const buscarPorNombre = (array, nombre) => {
+  const nuevoArraysss = array.filter((objeto) => objeto.nombre.toLowerCase().startsWith(nombre));
   return nuevoArraysss;
 };
-
-// Filtro orden alfabetico, orden asc - desc y top
-// eslint-disable-next-line arrow-body-style
+// FUNCION PARA ORDENAR POR NOMBRE, NUMERO Y TOP 10
 export const ordenAlfNum = (arr, propiedad) => {
   return arr.sort((a, b) => (a[propiedad] < b[propiedad] ? -1 : 1));
 };
 
-// SELECCIONANDO STRING.
-// eslint-disable-next-line consistent-return
+// SELECCIONANDO STRING.(PARTE DE LA FUNCIÓ ORDENAR).
 export const AsDes = (data, string) => {
   switch (string) {
     case 'A-Z':

@@ -13,68 +13,69 @@
   <body>
     <header>
       <figure>
-                <img class="logo-cabecera-pokemon" src="./imagenes/pokelogo.png">
+        <img class="logo-cabecera-pokemon" src="./imagenes/pokelogo.png">
       </figure>      
     </header>
+
+    <main>
         <form class="fomulario-nombre">
-                <input type="text" id="nombre-pokemon" value="" placeholder="Escribe el nombre de tu pokémon"/>
+          <input type="text" id="busca-pokemon" value="" placeholder="Escribe el nombre de tu pokémon"/>
         </form>
-    <div id="siderbar">
-        <div class="toglee">
-                <span class="menu">&#9776;</span>    
-        </div>
-        <ul>
-                
-            <form id="filtros">
-                <li> <p>Filtrar por:</p></li>            
-                <li>
-                        <select id="filtro-distancia" class="filtro-distancia">
-                                <option disabled selected>Huevo</option> 
-                                <option value="Not in Eggs">Not in Eggs</option>
-                                <option value="2 km">2 km</option>
-                                <option value="5 km">5 km</option>
-                                <option value="10 km">10 km</option>
-                        </select>
-                </li>
-                <li>
-                        <select name="" id="ordenAlfNum">
-                                <option disabled selected>Orden</option>
-                                <option value="A-Z">A-Z</option>
-                                <option value="Z-A">Z-A</option>
-                                <option value="ASC">Ascendente</option>
-                                <option value="DESC">Descendente</option>
-                        </select>
-                </li>
-                <li>
-                        <select id="filtro-debilidades">
-                                <option disabled selected>Debilidades</option> 
-                                <option value="Water">Agua</option>
-                                <option value="Flying">Aire</option>
-                                <option value="Dragon">Dragon</option>
-                                <option value="Electric">Electricidad</option>
-                                <option value="Ghost">Fantasma</option>
-                                <option value="Fire">Fuego</option>
-                                <option value="Ice">Hielo</option>
-                                <option value="Bug">Insecto</option>
-                                <option value="Normal">Normal</option>
-                                <option value="Fighting">Lucha</option> 
-                                <option value="Grass">Planta</option>
-                                <option value="Psychic">Psíquico</option>
-                                <option value="Rock">Roca</option>                          
-                                <option value="Ground">Tierra</option> 
-                                <option value="Poison">Veneno</option>
-                                <option value="Fairy">Magico</option>                          
-                                <option value="Dark">Oscuro</option> 
-                                <option value="Steel">Acero</option>
-                        </select>
-                    </li>
+        <div id="siderbar">
+           <div class="toglee">
+             <span class="menu">&#9776;</span>    
+           </div>
+           <ul>
+           <form id="filtros">
+             <li> <p>Filtrar por:</p></li>               
+              <li>
+                <select id="filtro-distancia" class="filtro-distancia">
+                  <option disabled selected>Huevo</option> 
+                  <option value="Not in Eggs">Not in Eggs</option>
+                  <option value="2 km">2 km</option>
+                  <option value="5 km">5 km</option>
+                  <option value="10 km">10 km</option>
+                </select>
+              </li>
+              <li>
+                <select name="" id="ordenAlfNum">
+                  <option disabled selected>Orden</option>
+                  <option value="A-Z">A-Z</option>
+                  <option value="Z-A">Z-A</option>
+                  <option value="ASC">Ascendente</option>
+                  <option value="DESC">Descendente</option>
+                </select>
+              </li>
+              <li>
+                <select id="filtro-debilidades">
+                  <option disabled selected>Debilidades</option> 
+                  <option value="Water">Agua</option>
+                  <option value="Flying">Aire</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Electric">Electricidad</option>
+                  <option value="Ghost">Fantasma</option>
+                  <option value="Fire">Fuego</option>
+                  <option value="Ice">Hielo</option>
+                  <option value="Bug">Insecto</option>
+                  <option value="Normal">Normal</option>
+                  <option value="Fighting">Lucha</option> 
+                  <option value="Grass">Planta</option>
+                  <option value="Psychic">Psíquico</option>
+                  <option value="Rock">Roca</option>                          
+                  <option value="Ground">Tierra</option> 
+                  <option value="Poison">Veneno</option>
+                  <option value="Fairy">Magico</option>                          
+                  <option value="Dark">Oscuro</option> 
+                  <option value="Steel">Acero</option>
+                </select>
+              </li>
             </form>
-                 <li>
-                        <button id="mayor-frecuencia" value="MAYORF"><img src="./imagenes/top10.jpg" alt="TOP 10" width="100px"></button>
-                </li>
-                <li><p>Tipos:</p></li>
-                <li>
-                    <section id="guia-tipos" class="guia-tipos">
+              <li>
+                <button id="mayor-frecuencia" value="MAYORF"><img src="./imagenes/top10.jpg" alt="TOP 10" width="100px"></button>
+              </li>
+              <li> <p>Tipos:</p></li>
+              <li>
+                <section id="guia-tipos" class="guia-tipos">
                         <button id="aire" class="btn-tipo"> 
                                <img class="btn" src="./imagenes/aire.png" alt="Flying"><br> Aire
                         </button>
@@ -120,14 +121,12 @@
                         <button id="veneno" class="btn-tipo"> 
                                 <img class="btn" src="./imagenes/veneno.png" alt="Poison"><br> Veneno
                         </button>
-                    </section>
-                </li>
-        </ul>
-    </div>
-    
-   <main>
-        <div class="insertar-pokemones" id="insertar-pokemones"></div>   
-   </main> 
+                </section>
+              </li>
+             </ul>
+        </div>
+          <div class="insertar-pokemones" id="insertar-pokemones"></div>   
+    </main> 
    
     <footer>
       <a class="redes-sociales" href="https://www.facebook.com/PokemonGO/" title="Facebook PokemonGo" target="_blank"> <img src="./imagenes/facebook.png" alt="Facebook"> </a>
