@@ -59,7 +59,15 @@ Dentro de la investigación encontramos lo siguiente:
   - Como usuario necesito filtrar por orden alfabetico a fin de realizar una búsqueda ordenada.
   - Como usuario necesito ver la página en distintos dispositivos para mayor comodidad.
   - Como usuario necesito filtrar por evolución para saber la siguiente evolcuión de un pokémon.
+
+  ### 3.2. User persona
+
+  Teniendo en cuenta las historias de usuario, creamos el siguiente User Persona:
+
+  ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/master/src/imagenes/userpokemon.png)
+
   ***
+  
 ## 4. Prototipo en papel
 
 ### 4.1. Desktop
