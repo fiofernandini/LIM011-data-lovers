@@ -16,7 +16,7 @@
 
 ## 1. Resumen
 
-Este proyecto permite al usuario visualizar a los 151 Pokemones de la región Kanto, organizados en orden numérico. Además, también podrá usar filtros avanzados de búsqueda como de manera ascendente o descendente, por huevos (para conocer los kilometros) y por debilidades. 
+Este proyecto permite al usuario visualizar a los 151 Pokemones de la región Kanto, organizados en orden numérico. Además, también podrá usar filtros avanzados de búsqueda por orden (ascendente, descendente, alfabetico), por huevos (para conocer los kilometros) por tipos y debilidades. 
 Buscamos que con esta información el usuario pueda mejorar su estrategia de juego en Pokémon Go.
 
 ## 2. Imagen final del proyecto
@@ -95,6 +95,7 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 
 * Eliminar los botones de tipo de Pokemon que estaban en la parte superior de la pantalla ya que los usuarios encontraron la primera pantalla muy recargada de información.
 * Crear un menú desplegable en donde se ubicaban las opciones de filtrado y tipo de Pokemon, ya que los usuarios estaban acostumbrados a este tipo de menú y hacía que la primera página de la web se vea más ordenada.
+* El nombre de los Pokémons estaba en color rojo, lo cual para el usuario significaba un signo de alerta o advertencia, tomando en cuenta esta sensación se optó por cambiar de color.
 *  El usuario identificó el listado de Pokemones y su información detallada, tuvo alguna dificultad con el buscador y el idioma ya que en su mayoría el contenido estaba en ingles y las opciones de filtrado en español, sin embargo, al descubrir el bloque de opciones de filtrado y ordenado de cada Pokémon pudo identificar y clasificar a cada Pokemon.
 ***
 ## 6. Prototipo en Figma
@@ -130,11 +131,11 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 - [ ] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
 ### Javascript
 - [X] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
-- [ ] Manipular objects (key | value).
+- [X] Manipular objects (key | value).
 - [X] Entender el uso de condicionales (`if-else` | `switch`).
 - [X] Entender el uso de bucles (`for` | `forEach`).
 - [ ] Entender la diferencia entre expression y statements.
-- [ ] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [X] Utilizar funciones (parámetros | argumentos | valor de retorno).
 - [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [X] Utilizar ES Modules (`import` | `export`).
 ### Pruebas Unitarias (_testing_)
@@ -144,43 +145,8 @@ Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los sigu
 - [X] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
 - [X] Colaborar en Github (pull requests).
 ### Buenas prácticas de desarrollo
-- [ ] Organizar y dividir el código en módulos (Modularización).
+- [X] Organizar y dividir el código en módulos (Modularización).
 - [X] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [X] Utilizar linter para seguir buenas prácticas (ESLINT).
 
 ***
-## 8. Reflexión
-
-### 1. Sé lo que es, para qué sirve, su contexto y cómo se espera que funcione.
-
-Tengo claro algunos de los objetivos de aprendizaje, pero siento que me falta complementar otros, 
-de alguna forma sé para que sirven y que hacen, pero todavía me enredo en como exactamente estan funcionando.
-
-### 2. Lo hice en este proyecto y lo puedo explicar.
-### En la parte UX:
-* Prototipado baja fidelidad.
-* Prototipado de alta fidelidad.
-* Test de usabilidad.
-* Historias de usuario.
-* Iteraciones.
-
-### En la parte de codigo:
-* Maquetación con el html.
-* Css.
-* Función de filtrado por huevitos.
-* Función de filtrado por tipos.
-* Función de filtrado por debilidades.
-* Función de busqueda por nombre.
-(la función de tipo y debilidades fue fusionada con ayuda de una Coach para funcionarla a solo una función,
- yo logro entenderlas por separado)
-
-### 3. Lo puedo volver a hacer en otro contexto/proyecto diferente. Qué propones para trabajar la siguiente semana.
-
-* Realizar mi proyecto pensando en mis usuarios.
-* Realizar mis prototipos de alta fidelidad con todas las historias de usuario.
-* Maquetar con html acorde a mi Figma.
-* Dar diseño con css.
-* Trabajar con import y export.
-* Realizar algunas funciones de filtrado.
-
-Hay ciertas iteraciones que todavía quiero realizar para hacer mi pagina todavía mas amigable para los usuarios, tanto en interacción como lo visual. Mi propuesta es trabajar de forma independiente, para poder concretar estas iteraciones, a parte de eso, todavía me falta concretar objetivos de aprendizaje, que deseo manejar a mi propio ritmo.
