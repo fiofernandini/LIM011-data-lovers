@@ -46,27 +46,6 @@ const card = (obj) => {
             <h4>${obj.nombre}</h4>
             <h6># ${obj.numero}</h6>
           </section>
-<<<<<<< HEAD
-          <section class="modal-main">
-            <section class = "columna">
-                <p class="datos-alternativos">Tipo</p>
-                <p><span class="datos-alternativos1">${obj.tipo}</span></p>
-                <p class ="datos-alternativos">Altura</p>
-                <p><span class="datos-alternativos1">${obj.altura}</span></p>
-                <p class = "datos-alternativos">Peso</p>
-                <p><span class = "datos-alternativos1">${obj.peso}</span></p>
-                <p class = "datos-alternativos">Debilidades</p>
-                <p><span class = "datos-alternativos1">${obj.debilidades}</span></p>           
-            </section>
-            <section class = "columna">
-                <p class = "datos-alternativos">H.Aparación</p>
-                <p><span class = "datos-alternativos1">${obj.horaAparicion}</span></p>
-                <p class = "datos-alternativos">Caramelos</p>
-                <p><span class = "datos-alternativos1">${obj.caramelos}</span></p> 
-                <p class = "datos-alternativos">Incubadora</p>
-                <p><span class = "datos-alternativos1">${obj.huevo}</span><p/> 
-            </section>
-=======
           <section class="modal-main"> 
             <p><strong>Tipo:</strong> ${obj.tipo}</p>
             <p><strong>Altura:</strong> ${obj.altura}</p>
@@ -76,7 +55,6 @@ const card = (obj) => {
             <p><strong>Debilidades:</strong></p>
             <p>${obj.debilidades}<p>
             <p><strong>Hora de aparición:</strong> ${obj.horaAparicion}</p>
->>>>>>> 44233f4ec0a71b49152cff45977f250acc1e2cb9
           </section>
           <div class="modal-footer">
             <div class="evolucion">${stringEvolution(evolutions(dataPokemon, 'Previo', obj.identificador))}</div>
