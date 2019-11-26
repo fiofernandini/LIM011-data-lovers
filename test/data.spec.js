@@ -1,5 +1,5 @@
 import {
-  filtroHuevo, filtroDebilidadTipo, buscarPorNombre, AsDes, traerDataMap2, evolutions,
+  filtroHuevo, filtroTipo, filtroDebilidad, buscarPorNombre, AsDes, traerDataMap2, evolutions,
 } from '../src/data';
 
 describe('traerDataMap2', () => {
@@ -25,27 +25,27 @@ describe('filtroHuevo', () => {
   });
 });
 
-describe('filtroDebilidadTipo', () => {
+describe('filtroTipo', () => {
   it('deberia ser una funcion', () => {
-    expect(typeof filtroDebilidadTipo).toBe('function');
+    expect(typeof filtroTipo).toBe('function');
   });
 
   it('deberia filtrar por tipo fuego', () => {
     const dataTipo = [{ nombre: 'Bulbasaur', tipo: ['Grass', 'Poison'] }, { nombre: 'Charmeleon', tipo: ['Fire'] }, { nombre: 'Vulpix', tipo: ['Fire'] }];
     const tipoEsperado = [{ nombre: 'Charmeleon', tipo: ['Fire'] }, { nombre: 'Vulpix', tipo: ['Fire'] }];
-    expect(filtroDebilidadTipo(dataTipo, 'tipo', 'Fire')).toEqual(tipoEsperado);
+    expect(filtroTipo(dataTipo, 'Fire')).toEqual(tipoEsperado);
   });
 });
 
-describe('filtoDebilidadTipo', () => {
+describe('filtoDebilidad', () => {
   it('deberia ser una funcion', () => {
-    expect(typeof filtroDebilidadTipo).toBe('function');
+    expect(typeof filtroDebilidad).toBe('function');
   });
 
   it('deberia filtrar por debilidad agua', () => {
     const dataDebilidad = [{ nombre: 'Bulbasaur', debilidades: ['Fire', 'Ice'] }, { nombre: 'Charmeleon', debilidades: ['Water', 'Ground'] }];
     const debilidadEsperada = [{ nombre: 'Charmeleon', debilidades: ['Water', 'Ground'] }];
-    expect(filtroDebilidadTipo(dataDebilidad, 'debilidades', 'Water')).toEqual(debilidadEsperada);
+    expect(filtroDebilidad(dataDebilidad, 'Water')).toEqual(debilidadEsperada);
   });
 });
 

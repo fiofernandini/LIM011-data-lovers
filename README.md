@@ -8,8 +8,7 @@
 * [4. Prototipo en papel](#4-prototipo-en-papel)
 * [5. Feedback](#5-feedback)
 * [6. Prototipo en Figma](#6-prototipo-en-figma)
-* [7. Objetivos de aprendizaje](#7-obejtivos-de-aprendizaje)
-* [8. Reflexión](#8-reflexión)
+* [7. Obejtivos de aprendizaje](#7-objetivos-de-aprendizaje)
 
 
 ***

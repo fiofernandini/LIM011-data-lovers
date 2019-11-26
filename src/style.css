@@ -27,6 +27,7 @@ ul{
 }
 .logo-cabecera-pokemon{
     display: flex; 
+    display: block;
     width: 360px;
     height: 160px;
     margin: auto; 
@@ -37,7 +38,6 @@ ul{
     position: absolute;
     margin-top: -50px;
     width: 260px;
-    height: 120%;
     background: rgba(222, 222, 228, 0.9);
     left: -260px;
     transition: all 500ms linear;
@@ -56,7 +56,7 @@ ul{
 .toglee{
     position: absolute;
     left: 270px;
-    top: -35px;
+    margin-top: -30px;
     cursor: pointer;
 }
 .menu{
@@ -77,10 +77,11 @@ ul{
     width: 230px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .tarjeta-pokemon:hover{
-    transform: scale(1.1,1.1); 
-    transition-duration: 300ms;
+    transform: scale(1.2,1.2); 
+    transition-duration: 500ms;
 }
 .imagen-pokemon{
     padding: 5px;
@@ -125,10 +126,10 @@ ul{
     justify-content: center;
     align-items: center;
 }
-#nombre-pokemon{
-   height: 25px;
-   width: 280px;
-   font-size: 18px;
+#busca-pokemon{
+    width: 275px;
+   height: 22px;
+   font-size: 18px;  
 }
 /*INICIO MODAL*/
 .modal{
@@ -140,7 +141,7 @@ ul{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(75, 80, 82, 0.7);
+    background: rgba(69, 73, 73, 0.7);
 }
 .flex{
     width: 100%;
@@ -150,14 +151,12 @@ ul{
     align-items: center;
 }
 .contenido-modal{
-    position: relative;
+    position: relative; 
     background-image: url(./imagenes/paipos.png);
-   /* background: linear-gradient(to bottom, rgb(6, 196, 180), rgb(90, 165, 177), rgb(188, 236, 222)); */
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(236, 225, 225, 0.3);
     margin: auto;
-    width: 35%;
+    width: 380px;
     border-radius:30px;
     animation-name: modal;
     animation-duration: 1s;
@@ -170,10 +169,9 @@ ul{
     color: rgb(250, 241, 241);
     font-size: 60px;
     font-weight: bolder;
-    margin: 8px;
-    text-align: center;
-    cursor: pointer;
-    
+    position: absolute;
+    right: 15px;
+    cursor: pointer;  
 }
 .modal-open{
     display: block;
@@ -181,11 +179,12 @@ ul{
 .modal-body{
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
 }
 .modal-header{
     text-align: center;
     padding: 5px;
-    color: rgb(44, 42, 42);
+    color: #39393d;
     font-weight: bolder;
     font-size: 22px;
 }
@@ -193,59 +192,52 @@ ul{
     width: 150px;
     height: 150px;
 }
-.modal-main{ 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-   
+.imagen-pokemon-modal{
+    margin-bottom: -10px;
 }
-.columna{
-    padding: 3px;
-    text-align: center; 
-}
-.datos-alternativos{
-    width: 120px;
-    height: 25px;
-    background-color:rgb(27, 112, 56);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    line-height: 27px;
+.modal-main{
+    text-align: justify;
     margin: auto;
-}
-.datos-alternativos1{
-    font-weight: bold;   
-    line-height: 30px;
+    color: #505160;
+    font-size: 16px;
 }
 .modal-footer{
     text-align: center;
     display: flex; 
     flex-wrap: wrap;
-    justify-content: center;   
-    margin-top: -10px; 
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #003b46;
 }
 .evolucion{
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
 }
-.columna-evo{
-    padding: 10px;
-}
 .evolucion figure{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
-    background-color:rgb(125, 196, 238);
-    margin: auto;
+    background: linear-gradient(to bottom, rgb(6, 196, 180), rgb(90, 165, 177), rgb(188, 236, 222));
+    margin: 5px;
 }
 .imagen-evolucion{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 #mayor-frecuencia{
     background: none;
     border: none; 
+}
+.columnaone{
+    columns: 2;
+  text-align: justify;
+  column-rule: 1px solid;
+}
+.imagen-caramelo,
+.imagen-huevito{
+width: 15px;
 }
 @media(max-width: 768px){
     .logo-cabecera-pokemon{
@@ -255,20 +247,7 @@ ul{
 }
 @media(max-width: 420px){
     .contenido-modal{
-        width: 70%;
-    }
-    .evolucion figure{
-        width: 70px;
-        height: 70px;
-        border: white 2px solid;
-        font-size: 6px; 
-    }
-    .evolucion figure img{
-        width: 60px;
-        height: 60px;
-    }
-    .columna-evo{
-        font-size: 12px;
+        width: 83%;
     }
 }
 
