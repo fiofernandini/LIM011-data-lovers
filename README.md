@@ -6,10 +6,9 @@
 * [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
 * [3. Investigación UX](#3-investigación-UX)
 * [4. Prototipo en papel](#4-prototipo-en-papel)
-* [5. Feedback](#5-feedback)
-* [6. Prototipo en Figma](#6-prototipo-en-figma)
+* [5. Prototipo en Figma](#5-prototipo-en-figma)
+* [6. Feedback](#6-feedback)
 * [7. Obejtivos de aprendizaje](#7-objetivos-de-aprendizaje)
-
 
 ***
 
@@ -89,29 +88,36 @@ Dentro de la investigación encontramos lo siguiente:
 
 ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/celularpapel4.jpeg)
 ***
-## 5. Feedback
-Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los siguientes cambios:
 
-* Eliminar los botones de tipo de Pokemon que estaban en la parte superior de la pantalla ya que los usuarios encontraron la primera pantalla muy recargada de información.
-* Crear un menú desplegable en donde se ubicaban las opciones de filtrado y tipo de Pokemon, ya que los usuarios estaban acostumbrados a este tipo de menú y hacía que la primera página de la web se vea más ordenada.
-* El nombre de los Pokémons estaba en color rojo, lo cual para el usuario significaba un signo de alerta o advertencia, tomando en cuenta esta sensación se optó por cambiar de color.
-*  El usuario identificó el listado de Pokemones y su información detallada, tuvo alguna dificultad con el buscador y el idioma ya que en su mayoría el contenido estaba en ingles y las opciones de filtrado en español, sin embargo, al descubrir el bloque de opciones de filtrado y ordenado de cada Pokémon pudo identificar y clasificar a cada Pokemon.
-***
-## 6. Prototipo en Figma
+## 5. Prototipo en Figma
 
-### 6.1. Desktop
+### 5.1. Desktop
 
 ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/figmaescritorio.png)
 
 \* Puedes ver el prototipo desktop completo en este [link](https://www.figma.com/proto/AD7dxL6NzPTDVg1AFfpQKC/POKE?node-id=2%3A2&scaling=min-zoom)
 
-### 6.2. Mobile
+### 5.2. Mobile
 
 ![](https://github.com/fiofernandini/LIM011-data-lovers/blob/PruebasFio/src/imagenes/figmacelular.png)
 
 \* Puedes ver el prototipo mobile completo en este [link](https://www.figma.com/proto/8QId6tCu6gQDM7UdPdSz0E/POKE-CELULAR?node-id=1%3A2&scaling=min-zoom)
 
 ***
+## 6. Feedback
+Testeamos el prototipo de baja fidelidad con 5 usuarios y se realizaron los siguientes cambios:
+
+* Eliminar los botones de tipo de Pokemon que estaban en la parte superior de la pantalla ya que los usuarios encontraron la primera pantalla muy recargada de información.
+* Crear un menú desplegable en donde se ubicaban las opciones de filtrado y tipo de Pokemon, ya que los usuarios estaban acostumbrados a este tipo de menú y hacía que la primera página de la web se vea más ordenada.
+* El nombre de los Pokémons estaba en color rojo, lo cual para el usuario significaba un signo de alerta o advertencia, tomando en cuenta esta sensación se optó por cambiar de color.
+*  El usuario identificó el listado de Pokemones y su información detallada, tuvo alguna dificultad con el buscador y el idioma ya que en su mayoría el contenido estaba en ingles y las opciones de filtrado en español, sin embargo, al descubrir el bloque de opciones de filtrado y ordenado de cada Pokémon pudo identificar y clasificar a cada Pokemon.
+
+### 6.1. Customer Journey map
+
+![](https://github.com/fiofernandini/LIM011-data-lovers/blob/master/src/imagenes/customerjourney.png)
+
+***
+
 ## 7. Objetivos de aprendizaje
 
 ### UX
